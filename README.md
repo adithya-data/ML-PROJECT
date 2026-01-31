@@ -6,6 +6,9 @@ This project focuses on predicting women's productivity levels using the **cycle
 
 The aim is to create a data-driven approach to align tasks and work patterns with natural hormonal cycles, helping improve productivity and well-being.
 
+## 🌐 Live App
+🔗 Streamlit App: https://women-planner.streamlit.app
+
 ## 🌀 What is Cycle Syncing?
 
 Cycle syncing is a method that aligns activities with the four phases of the menstrual cycle, as hormonal fluctuations directly affect physical and mental performance.
