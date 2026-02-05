@@ -6,61 +6,83 @@ import pickle
 
 #Web Page Desing
 st.markdown("""
-    <style>
-    /* Main background */
-    .stApp {
-        background-color:pink;
-    }
+<style>
 
-    /* Title */
-        h1{
-            color:blue;
-            }
+/* App background */
+.stApp {
+    background-color: pink;
+}
+
+h1{
+    color: #880e4f !important;   
+}
             
-    
 
-/* Description text */
-p {
-    color: white;
+            
+h3{
+   color: #880e4f !important;         
+}
+
+/* -------- NUMBER INPUT -------- */
+div[data-testid="stNumberInput"] input {
+    background-color: #ffe4ec !important;
+    color: #4a0033 !important;
+    border-radius: 8px;
+}
+
+div[data-testid="stNumberInput"] label {
+    color: #880e4f !important;
+    font-weight: 600;
+}
+
+/* -------- SELECTBOX (REAL FIX) -------- */
+div[data-baseweb="select"] > div {
+    background-color: #ffe4ec !important;
+    border: 2px solid #f48fb1 !important;
+    color: #4a0033 !important;
+    border-radius: 8px;
+}
+
+/* Selected value text */
+div[data-baseweb="select"] span {
+    color: #4a0033 !important;
     font-weight: 500;
 }
 
-/* Subheaders like "Hormone Levels (Optional)" */
-h3 {
-    color: #f48fb1;
+/* Dropdown arrow */
+div[data-baseweb="select"] svg {
+    fill: #4a0033 !important;
 }
-    }
 
-    /* Labels */
-    label {
-        color: #4a4a4a !important;
-        font-weight: 500;
-    }
+/* Selectbox label */
+div[data-testid="stSelectbox"] label {
+    color: #880e4f !important;
+    font-weight: 600;
+}
 
-    /* Buttons */
-    div.stButton > button {
-        background-color:#f48fb1;
-        color: pink;
-        border-radius: 10px;
-        height: 3em;
-        width: 100%;
-        font-size: 16px;
-        border: none;
-    }
 
-    div.stButton > button:hover {
-        background-color: #f48fb1;
-        color: pink;
-    }
 
-    /* Success box */
-    .stAlert > div {
-        background-color:#444444;
-        color: #880e4f;
-        border-radius: 10px;
-    }
-    </style>
+/* -------- BUTTON -------- */
+div.stButton > button {
+    background-color:  #880e4f !important;;
+    color: white !important;
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+}
+
+/* -------- SUCCESS BOX -------- */
+.stAlert > div {
+    background-color: #ffe4ec !important;
+    color: #880e4f;
+    border-radius: 10px;
+}
+
+</style>
 """, unsafe_allow_html=True)
+
 
 
 #Model Loading
@@ -84,7 +106,7 @@ FEATURES = [
 # -----------------------------
 # Page title
 # -----------------------------
-st.title("Women Productivity Prediction")
+st.title("🌸Women Productivity Prediction")
 st.write("Lets check your productivity level!!")
 
 st.divider()
