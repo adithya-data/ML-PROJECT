@@ -107,6 +107,8 @@ FEATURES = [
 # Page title
 # -----------------------------
 st.title("🌸Women Productivity Prediction")
+st.image("cycle_sync.jpg", width=500)
+
 st.write("Lets check your productivity level!!")
 
 st.divider()
